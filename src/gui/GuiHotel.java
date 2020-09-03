@@ -628,7 +628,7 @@ public class GuiHotel extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Hotel";
         String contenido = PantallaPrincipal.gHtl.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

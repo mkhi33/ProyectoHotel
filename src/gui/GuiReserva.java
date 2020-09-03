@@ -988,7 +988,7 @@ public class GuiReserva extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Reservas";
         String contenido = PantallaPrincipal.gRsv.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

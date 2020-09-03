@@ -750,7 +750,7 @@ public class GuiProducto extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Productos";
         String contenido = PantallaPrincipal.gProd.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

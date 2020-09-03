@@ -856,7 +856,7 @@ public class GuiProveedor extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Proveedor";
         String contenido = PantallaPrincipal.gProv.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

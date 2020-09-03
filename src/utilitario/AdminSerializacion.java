@@ -20,7 +20,7 @@ public class AdminSerializacion {
     public static void guardar(Object objeto, String nombreArchivo) {
         ObjectOutputStream salida=null;
         try {
-            salida = new ObjectOutputStream(new FileOutputStream("Serializacion\\"+nombreArchivo));
+            salida = new ObjectOutputStream(new FileOutputStream("Serializacion/"+nombreArchivo));
             salida.writeObject(objeto);
             salida.close();
         } catch (Exception ex) {
@@ -39,9 +39,12 @@ public class AdminSerializacion {
         Object obj1=null;
         try {
             ObjectInputStream entrada = new ObjectInputStream(new FileInputStream("Serializacion\\"+nombreArchivo));
+            System.out.print(entrada);
             obj1 = (Object) entrada.readObject();
             entrada.close();
+            
         } catch (Exception ex) {
+            
             System.out.println("Error al obtener objeto AdminSerializacion: "+ex.getMessage());
         }
          return obj1;

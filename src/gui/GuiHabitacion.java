@@ -845,7 +845,7 @@ public class GuiHabitacion extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Habitaciones";
         String contenido = PantallaPrincipal.gHab.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

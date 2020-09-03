@@ -673,7 +673,7 @@ public class GuiCategoriaHabitacion extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Categorias de habitacion";
         String contenido = PantallaPrincipal.gCatHab.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

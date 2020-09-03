@@ -544,7 +544,7 @@ public class GuiAreasDeTrabajo extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "AreasDeTrabajo";
         String contenido = PantallaPrincipal.gArea.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

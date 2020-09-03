@@ -37,18 +37,46 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     public PantallaPrincipal() {
         super.setTitle("Sistema Hotel");
         try {
-
-            gArea = (GestionAreaDeTrabajo) AdminSerializacion.obtener("AreaDeTrabajo.obj");
-            gCatHab = (GestionCategoriaHabitacion) AdminSerializacion.obtener("gCatHab.obj");
-            gUsuario = (GestionUsuario) AdminSerializacion.obtener("Usuario.obj");
-            gEmpleado = (GestionEmpleado) AdminSerializacion.obtener("objEmpleado.obj");
-            gHtl = (GestionHotel) AdminSerializacion.obtener("objHotel.obj");
-            gHab = (GestionHabitacion) AdminSerializacion.obtener("objHabitacion.obj");
-            gRsv = (GestionReserva) AdminSerializacion.obtener("objReserva.obj");
-            gProv = (GestionProveedor) AdminSerializacion.obtener("objProveedor.obj");
-            gProd = (GestionProducto) AdminSerializacion.obtener("objProductos.obj");
-            // gCaja = (GestionCaja) AdminSerializacion.obtener("objCaja.obj");
-            // gFact = (GestionFactura) AdminSerializacion.obtener("objFactura.obj");
+            if(AdminSerializacion.obtener("AreaDeTrabajo.obj") != null){
+              gArea = (GestionAreaDeTrabajo) AdminSerializacion.obtener("AreaDeTrabajo.obj");  
+            }
+            if(AdminSerializacion.obtener("gCatHab.obj") != null){
+              gCatHab = (GestionCategoriaHabitacion) AdminSerializacion.obtener("gCatHab.obj");  
+            }
+            
+            if(AdminSerializacion.obtener("Usuario.obj") != null){
+               gUsuario = (GestionUsuario) AdminSerializacion.obtener("Usuario.obj"); 
+            }
+            if(AdminSerializacion.obtener("objEmpleado.obj") != null){
+               gEmpleado = (GestionEmpleado) AdminSerializacion.obtener("objEmpleado.obj");
+            }
+            if(AdminSerializacion.obtener("objHotel.obj") != null){
+               gHtl = (GestionHotel) AdminSerializacion.obtener("objHotel.obj");
+            }            
+            
+            if(AdminSerializacion.obtener("objHabitacion.obj") != null){
+               gHab = (GestionHabitacion) AdminSerializacion.obtener("objHabitacion.obj");
+            }
+            
+            if(AdminSerializacion.obtener("objHabitacion.obj") != null){
+               gHab = (GestionHabitacion) AdminSerializacion.obtener("objHabitacion.obj");
+            } 
+            if(AdminSerializacion.obtener("objReserva.obj") != null){
+               gRsv = (GestionReserva) AdminSerializacion.obtener("objReserva.obj");
+            } 
+            if(AdminSerializacion.obtener("objProveedor.obj") != null){
+               gProv = (GestionProveedor) AdminSerializacion.obtener("objProveedor.obj");
+            } 
+            if(AdminSerializacion.obtener("objProductos.obj") != null){
+               gProd = (GestionProducto) AdminSerializacion.obtener("objProductos.obj");
+            }         
+            if(AdminSerializacion.obtener("objCaja.obj") != null){
+               gCaja = (GestionCaja) AdminSerializacion.obtener("objCaja.obj");
+            }          
+            if(AdminSerializacion.obtener("objFactura.obj") != null){
+               gFact = (GestionFactura) AdminSerializacion.obtener("objFactura.obj");
+            }  
+            
 
         } catch (Exception e) {
         }

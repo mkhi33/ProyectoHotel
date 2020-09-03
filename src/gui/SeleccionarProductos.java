@@ -362,7 +362,7 @@ public class SeleccionarProductos extends javax.swing.JInternalFrame {
 
         String nombreArchivo = "Listas de productos";
         String contenido = PantallaPrincipal.gLstProductos.getInformacionGestion();
-        String ruta = "Reportes\\" + nombreArchivo;
+        String ruta = "Reportes/" + nombreArchivo;
 
         try {
             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");

@@ -657,7 +657,7 @@ public class GuiCaja extends javax.swing.JInternalFrame {
                         int tamanioFacturas = PantallaPrincipal.gFact.lstFactura.size();
                         String nombreArchivo = "Fact-"+tamanioFacturas;
                         String contenido = PantallaPrincipal.gFact.generarFactura();
-                        String ruta = "Factura\\" + nombreArchivo;
+                        String ruta = "Factura/" + nombreArchivo;
 
                         try {
                             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");
@@ -715,7 +715,7 @@ public class GuiCaja extends javax.swing.JInternalFrame {
                         int tamanioFacturas = PantallaPrincipal.gFact.lstFactura.size();
                         String nombreArchivo = "Fact-"+tamanioFacturas;
                         String contenido = PantallaPrincipal.gFact.generarFactura();
-                        String ruta = "Factura\\" + nombreArchivo;
+                        String ruta = "Factura/" + nombreArchivo;
 
                         try {
                             FileOutputStream archivo = new FileOutputStream(ruta + ".pdf");
